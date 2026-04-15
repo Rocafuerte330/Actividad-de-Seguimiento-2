@@ -139,6 +139,12 @@ def t_test_multiple (df,tto,variable): #Prueba T de comparaciones multiples
     print("\nP-valores corregidos con Bonferroni:")
     for i, (g1, g2) in enumerate(comparaciones):
         print(f"{g1} vs {g2}: p-corrected = {p_corrected[i]:.4f}")
+
+#%% Prueba t para muestras pareadas
+datos1 = ? 
+datos2 = ?
+t_stat, p_value = stats.ttest_rel(datos1, datos2)
+
 #%% Prueba t de una muestra 
 data = ? 
 mu = ?
